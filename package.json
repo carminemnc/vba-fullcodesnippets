@@ -1,0 +1,26 @@
+{
+    "name": "vba-fullcodesnippets",
+    "publisher": "virochenko",
+    "description": "Most comprehensive repository for VBA code snippets.",
+    "version": "1.0.1",
+    "icon": "images/logo.png",
+    "license": "MIT",
+    "engines": {
+        "vscode": "0.0.9"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "vb",
+                "path": "./snippets/vba-snippets.json"
+            }
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/carminemnc/vba-fullcodesnippets"
+    }
+}
