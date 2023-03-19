@@ -226,8 +226,8 @@ ext install vba-fullcodesnippets
 ```
 ## Contacts
 You can contact me in the following ways: 
-- Mail : [spences10apps@gmail.com](mailto:carmine.mnc@gmail.com)
-- Github : [spences10](https://github.com/carminemnc)
+- Mail : [carmine.mnc@gmail.com](mailto:carmine.mnc@gmail.com)
+- Github : [carminemnc](https://github.com/carminemnc)
 
 ## Links
 - [Source Code](https://github.com/carminemnc/vba-fullcodesnippets)
