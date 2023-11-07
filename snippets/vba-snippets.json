@@ -1,0 +1,633 @@
+{
+  // basic snippets
+   "Boolean": {
+     "prefix": "DimBoolean",
+     "body": [
+       "Dim bol$1 As Boolean"
+     ],
+     "description": "Boolean declaration"
+     },
+     "Long": {
+     "prefix": "DimLong",
+     "body": [
+       "Dim lng$1 As Long"
+     ],
+     "description": "Long declaration"
+     },
+     "Double": {
+     "prefix": "DimDouble",
+     "body": [
+       "Dim dbl$1 As Double"
+     ],
+     "description": "Double declaration"
+     },
+     "String": {
+     "prefix": "DimString",
+     "body": [
+       "Dim str$1 As String"
+     ],
+     "description": "String declaration"
+     },
+     "Object": {
+     "prefix": "DimObject",
+     "body": [
+       "Dim obj$1 As Object"
+     ],
+     "description": "Object declaration"
+     },
+     "Array": {
+     "prefix": "DimArray",
+     "body": [
+       "Dim arr$1"
+     ],
+     "description": "Array declaration"
+     },
+     "Private": {
+     "prefix": "Private",
+     "body": [
+       "Private "
+     ],
+     "description": "Private declaration"
+     },
+     "Public": {
+     "prefix": "Public",
+     "body": [
+       "Public "
+     ],
+     "description": "Public declaration"
+     },
+     "If": {
+     "prefix": "If",
+     "body": [
+       "If ${1:condition} Then",
+       "\t$2",
+       "End If"
+     ],
+     "description": "If code block"
+     },
+     "ElseIf": {
+     "prefix": "ElseIf",
+     "body": [
+       "ElseIf ${1:condition2} Then",
+       "\t$0"
+     ],
+     "description": "ElseIf"
+     },
+     "Else": {
+     "prefix": "Else",
+     "body": [
+       "Else",
+       "\t$0"
+     ],
+     "description": "Else"
+     },
+     "With": {
+     "prefix": "With",
+     "body": [
+       "With $1",
+       "\t$2",
+       "End With"
+     ],
+     "description": "With code block"
+     },
+     "For Loop": {
+     "prefix": "for",
+     "body": [
+       "For ${1:i} = ${3:lb} To ${4:ub} Step ${5:1}",
+       "\t$0",
+       "Next ${1:i}"
+     ],
+     "description": "For next loop code block"
+     },
+     "ForEach": {
+     "prefix": "ForEach",
+     "body": [
+       "For Each ${1:variable} In ${2:collection}",
+       "\t$0",
+       "Next ${1:variable}"
+     ],
+     "description": "For each loop code block"
+     },
+     "DoLoopWhile": {
+     "prefix": "DoLoopWhile",
+     "body": [
+       "Do",
+       "\t$0",
+       "Loop While ${1:condition}"
+     ],
+     "description": "Do Loop While code block"
+     },
+     "DoWhile": {
+     "prefix": "DoWhile",
+     "body": [
+       "Do While ${1:condition}",
+       "\t$0",
+       "Loop"
+     ],
+     "description": "Do While Loop code block"
+     },
+     "While": {
+     "prefix": "While",
+     "body": [
+       "While ${1:condition}",
+       "\t$0",
+       "Wend"
+     ],
+     "description": "While Wend code block"
+     },
+     "Sub": {
+     "prefix": "Sub",
+     "body": [
+       "Sub ${1:func}()",
+       "'${2}",
+       "End Sub"
+     ],
+     "description": "Sub code block"
+     },
+     "Function": {
+     "prefix": "Function",
+     "body": [
+       "Function ${1:func}(ByVal ${2:input})",
+       "' ${3}",
+       "End Function"
+     ],
+     "description": "Function code block"
+     },
+     "SelectCase": {
+     "prefix": "SelectCase",
+     "body": [
+       "Select Case ${1:test}",
+       "",
+       "\tCase ${2:lists}",
+       "",
+       "\t\t${3:statements}",
+       "",
+       "\tCase Else",
+       "",
+       "\t\t${0:elseStatement}",
+       "",
+       "End Select"
+     ],
+     "description": "Select Case code block"
+     },
+     "UBound": {
+     "prefix": "UBound",
+     "body": [
+       "UBound($1)"
+     ],
+     "description": "UBound"
+     },
+     "LBound": {
+     "prefix": "LBound",
+     "body": [
+       "LBound($1)"
+     ],
+     "description": "LBound"
+     },
+     "To": {
+     "prefix": "To",
+     "body": [
+       "To"
+     ],
+     "description": "To"
+     },
+     "Cells": {
+     "prefix": "Cells",
+     "body": [
+       "Cells($1)"
+     ],
+     "description": "Cells"
+     },
+     "Range": {
+     "prefix": "Range",
+     "body": [
+       ".Range(.Cells($1), .Cells($2))"
+     ],
+     "description": "Range"
+     },
+     "Worksheets": {
+     "prefix": "Worksheets",
+     "body": [
+       "Worksheets(\"$1\")"
+     ],
+     "description": "Worksheets"
+     },
+     "Fix": {
+     "prefix": "Fix",
+     "body": [
+       "Fix($1)"
+     ],
+     "description": "Fix"
+     },
+     "Int": {
+     "prefix": "Int",
+     "body": [
+       "Int($1)"
+     ],
+     "description": "Int"
+     },
+     "ReDim": {
+     "prefix": "ReDim",
+     "body": [
+       "ReDim"
+     ],
+     "description": "ReDim"
+     },
+     "Set": {
+     "prefix": "Set",
+     "body": [
+       "Set"
+     ],
+     "description": "Set"
+     },
+     "Call": {
+     "prefix": "Call",
+     "body": [
+       "Call"
+     ],
+     "description": "Call"
+     },
+     "Preserve": {
+     "prefix": "Preserve",
+     "body": [
+       "Preserve"
+     ],
+     "description": "Preserve"
+     },
+     "Split": {
+     "prefix": "Split",
+     "body": [
+       "Split(${1:string}, \"${2:delimiter}\")"
+     ],
+     "description": "Split"
+     },
+     "Option Explicit": {
+     "prefix": "Option",
+     "body": [
+       "Option Explicit"
+     ],
+     "description": "Option Explicit"
+     },
+     "On Error Resume Next": {
+     "prefix": "OnError",
+     "body": [
+       "On Error Resume Next"
+     ],
+     "description": "On Error Resume Next"
+     },
+     "ClearContents": {
+     "prefix": "ClearContents",
+     "body": [
+       "ClearContents"
+     ],
+     "description": "ClearContents"
+     },
+     "Clear": {
+     "prefix": "Clear",
+     "body": [
+       "Clear"
+     ],
+     "description": "Clear"
+     },
+     "Columns": {
+     "prefix": "Columns",
+     "body": [
+       "Columns"
+     ],
+     "description": "Columns"
+     },
+     "Rows": {
+     "prefix": "Rows",
+     "body": [
+       "Rows"
+     ],
+     "description": "Rows"
+     },
+     "CreateObject": {
+     "prefix": "CreateObject",
+     "body": [
+       "CreateObject"
+     ],
+     "description": "CreateObject"
+     },
+     "IsEmpty": {
+     "prefix": "IsEmpty",
+     "body": [
+       "IsEmpty($1)"
+     ],
+     "description": "IsEmpty"
+     },
+     "comment block": {
+     "prefix": "cm",
+     "body": [
+       "'",
+       "' description.",
+       "'",
+       "' @since 1.0.0",
+       "' @param {type} [name] description.",
+       "' @return {type} [name] description.",
+       "' @see dependencies",
+       "'"
+     ],
+     "description": "comment block"
+     },
+     "End": {
+     "prefix": "End",
+     "body": [
+       "End"
+     ],
+     "description": "End"
+     },
+     "Right": {
+     "prefix": "Right",
+     "body": [
+       "Right($1)"
+     ],
+     "description": "Right"
+     },
+     "Left": {
+     "prefix": "Left",
+     "body": [
+       "Left($1)"
+     ],
+     "description": "Left"
+     },
+     "Len": {
+     "prefix": "Len",
+     "body": [
+       "Len($1)"
+     ],
+     "description": "Len"
+     },
+     "Item": {
+     "prefix": "Item",
+     "body": [
+       "Item($1)"
+     ],
+     "description": "Item"
+     },
+     "Max": {
+     "prefix": "Max",
+     "body": [
+       "Max($1)"
+     ],
+     "description": "Max"
+     },
+     "Min": {
+     "prefix": "Min",
+     "body": [
+       "Min($1)"
+     ],
+     "description": "Min"
+     },
+     "Round": {
+     "prefix": "Round",
+     "body": [
+       "Round($1)"
+     ],
+     "description": "Round"
+     },
+     "RoundUp": {
+     "prefix": "RoundUp",
+     "body": [
+       "RoundUp($1)"
+     ],
+     "description": "RoundUp"
+     },
+     "Sqr": {
+     "prefix": "Sqr",
+     "body": [
+       "Sqr($1)"
+     ],
+     "description": "Sqr"
+     },
+  // advanced snippets
+   "Last Row": {
+     "prefix": "lr",
+     "body": [
+       "Dim lr as Long: lr= ActiveWorkbook.ActiveSheet.Cells(Rows.Count,\"A\").End(xlUp).Row",
+     ],
+     "description": "Last row of the first column of the worksheet"
+   },
+   "Last Column": {
+     "prefix": "lc",
+     "body": [
+       "Dim lc as Long: lc= ActiveWorkbook.ActiveSheet.Cells(1,Columns.Count).End(xlToLeft).Column",
+     ],
+     "description": "Last column of the first row of the worksheet"
+   },
+ 
+   "Disable Screen Updating": {
+     "prefix": "screenoff",
+     "body": [
+       "With Application",
+       "\t.ScreenUpdating = False",
+       "End With"
+     ],
+     "description": "Disable Screen Updating"
+     },
+   
+     "Enable ScreenUpdating": {
+     "prefix": "screenon",
+     "body": [
+       "With Application",
+       "\t.ScreenUpdating = True",
+       "End With"
+     ],
+     "description": "Enable Screen Updating"
+     },
+ 
+ 
+     "Build Mail": {
+     "prefix": "mail",
+     "body": [
+       "Dim OutApp as Object,OutMail as Object",
+       "Set OutApp = CreateObject(\"Outlook.Application\")",
+       "Set OutMail = OutApp.CreateItem(0)",
+       "",
+       "\tWith OutMail",
+       "\t\t.To = \"\"",
+       "\t\t.Subject = \"\"",
+       "\t\t.CC = \"\"",
+       "\t\t.Body = \"\"",
+       "\t\t.Attachments.Add 'Here paste the filepath",
+       "\t\t.Display '.Send to send the mail",
+       "\tEnd With",
+       "",
+       "Set OutApp = Nothing",
+       "Set OutMail = Nothing",
+     ],
+     "description": "Create a Snippet for building up an email"
+     },
+ 
+     "Number to Letter": {
+     "prefix": "#toletter",
+     "body": [
+       "Public Function NumberToLetter(Number As Long) As String",
+       "NumberToLetter = Split(Cells(1, Number).Address(True, False),\"$\")(0)",
+       "End Function",
+     ],
+     "description": "Public function to convert number into letter"
+     },
+ 
+     "Letter to Number": {
+     "prefix": "letterto#",
+     "body": [
+       "Public Function LetterToNumber(Letter as String) As Long",
+       "LetterToNumber = Range(Letter & 1).Column",
+       "End Function",
+     ],
+     "description": "Public function to convert letter to number"
+     },
+ 
+     "Loop trough worksheets": {
+     "prefix": "worksheetloop",
+     "body": [
+       "Dim ws as Worksheet",
+       "",
+       "For Each ws In ActiveWorkbook.Sheets",
+       "\tDebug.Print ws.Name",
+       "Next ws"
+     ],
+     "description": "Loop trough current worksheets"
+     },
+ 
+     "Current User": {
+     "prefix": "user",
+     "body": [
+       "Environ(\"Username\")",
+     ],
+     "description": "Current user"
+     },
+     "Current Workbook Path": {
+     "prefix": "curpath",
+     "body": [
+       "ActiveWorkbook.Path",
+     ],
+     "description": "Active workbook path"
+     },
+     "Column to array": {
+     "prefix": "cltoarray",
+     "body": [
+       "Dim myArr() as Variant,i as Long",
+       "Dim col as String: col=\"A\" ' Define here which column take",
+       "Dim start as Long: start=1 ' Here set start=2 if you have headers",
+       "Dim lr as Long: lr = ActiveWorkbook.ActiveSheet.Cells(Rows.Count,col).End(xlUp).Row",
+       "",
+       "ReDim myArr(start to lr)",
+       "",
+       "For i=start to lr ' If you have header on your Worksheet set i=2",
+       "\tmyArr(i) = ActiveWorkbook.ActiveSheet.Cells(i,col).Value",
+       "Next i",
+       "",
+       "'Debug.Print Join(myArr,\",\") 'Transposing array"
+     ],
+     "description": "Create a variant array with column values"
+     },
+     "Open a new Word Istance": {
+     "prefix": "openword",
+     "body": [
+       "Dim WordApp as Object",
+       "Set WordApp = CreateObject(\"Word.Application\")",
+       "WordApp.Visible = True",
+       "WordApp.Documents.Add"
+     ],
+     "description": "Open a new word istance"
+     },
+     "Open a Word File": {
+     "prefix": "openwordfile",
+     "body": [
+       "Dim WordApp as Object,WordDoc as Object",
+       "Dim filePath as String: filepath= \"C:\\Desktop\\MyDocument.docx\" ' Here insert the filepath",
+       "Set WordApp = CreateObject(\"Word.Application\")",
+       "WordApp.Visible = True",
+       "Set WordDoc = WordApp.Documents.Open(filePath)"
+     ],
+     "description": "Open a word file"
+     },
+     "Open a URL in your default browser": {
+     "prefix": "openurl",
+     "body": [
+       "Dim url as String: url= \"https://www.google.com\"",
+       "ActiveWorkbook.FollowHyperlink Address:= url,NewWindow:=True",
+     ],
+     "description": "Open a URL"
+     },
+     "Split current worksheet based on column values": {
+     "prefix": "splitsheet",
+     "body": [
+       "",
+       "Dim lr as Long,lc as String,key as Variant",
+       "Dim col as String: col=\"A\" 'Here insert column letter for filtering",
+       "Set Unique = CreateObject(\"Scripting.Dictionary\")",
+       "",
+       "With ActiveWorkbook.ActiveSheet",
+       "",
+       "\tlr = .Cells(Rows.Count,col).End(xlUp).Row",
+       "\tlc = NumberToLetter(.Cells(1,Columns.Count).End(xlToLeft).Column)",
+       "",
+       "\tSet Data = .Range(col & \"1:\" & col & lr)",
+       "",
+       "\tOn Error Resume Next",
+       "\t\tFor x=2 to lr",
+       "\t\t\tUnique.Add Data(x,1).Value,1",
+       "\t\tNext x",
+       "\tOn Error GoTo 0",
+       "",
+       "\tFor Each key In Unique.Keys",
+       "\t\t.Range(col & \"1:\" & col & lr).AutoFilter, Field:=.Range(col & 1).Column,Criteria1:=key,Operator:=xlFilterValues",
+       "\t\tLRFilt = .Range(col & Rows.Count).End(xlUp).Row",
+       "\t\t.Range(col & \"1:\" & lc & LRfilt).SpecialCells(xlCellTypeVisible).Copy",
+       "\t\tSheets.Add(After:=Sheets(ActiveSheet.name)).name = key", 
+       "\t\tActiveSheet.Paste",
+       "\t\tCells.EntireColumn.AutoFit",
+       "\tNext key",
+       "", 
+       "End With",
+       ""
+ 
+     ],
+     "description": "Split the current sheet based on column values"
+     },
+     "Attach this Workbook into a new mail": {
+     "prefix": "attachthis",
+     "body": [
+       "Application.Dialogs(xlDialogSendMail).Show",
+     ],
+     "description": "Attach current workbook to a new mail"
+     },
+     "AutoFit Columns": {
+     "prefix": "fitcolumns",
+     "body": [
+       "Cells.Select",
+       "Cells.EntireColumn.AutoFit"
+     ],
+     "description": "Fit columns width for the worksheet"
+     },
+     "AutoFit Rows": {
+     "prefix": "fitrows",
+     "body": [
+       "Cells.Select",
+       "Cells.EntireRow.AutoFit"
+     ],
+     "description": "Fit rows width for the worksheet"
+     },
+     "Copy Active Worksheet into a new Workbook": {
+     "prefix": "copysheet",
+     "body": [
+       "ThisWorkbook.ActiveSheet.Copy Before:=Workbooks.Add.Worksheets(1)",
+     ],
+     "description": "Copy current worksheet into new workbook"
+     },
+     "Refresh Pivots": {
+     "prefix": "refreshpivots",
+     "body": [
+       "Dim pt As PivotTable",
+       "",
+       "For Each pt In ActiveWorkbook.PivotTables",
+       "\tpt.RefreshTable",
+       "Next pt"
+     ],
+     "description": "Refresh all pivot tables in the active workbook"
+     },
+ }
