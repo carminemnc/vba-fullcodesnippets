@@ -32,6 +32,8 @@ ext install vba-fullcodesnippets
 
 ### Basic Snippets
 
+A bunch of basic useful snippets
+
 
 | abbreviation  | description                         |
 | :------------ | :---------------------------------- |
@@ -53,6 +55,8 @@ ext install vba-fullcodesnippets
 | `Range`       | Range object                        |
 
 ### Advanced Snippets
+
+Some useful entire snippets such as opening a Word file, splitting a worksheet etc.
 
 | abbreviation    | description                                     |
 | :-------------- | :---------------------------------------------- |
@@ -77,7 +81,6 @@ ext install vba-fullcodesnippets
 | `copysheet`     | Copy current worksheet into a new workbook      |
 | `refreshpivots` | Refresh all pivot tables in the active workbook |
 
-Some useful entire snippets such as opening a Word file, splitting a worksheet..
 
 #### Enabling Screen Updating ```screenon```
 ```vb
