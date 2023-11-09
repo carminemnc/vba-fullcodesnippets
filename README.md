@@ -58,28 +58,30 @@ A bunch of basic useful snippets
 
 Some useful entire snippets such as opening a Word file, splitting a worksheet etc.
 
-| abbreviation    | description                                     |
-| :-------------- | :---------------------------------------------- |
-| `screenon`      | Enabling screen updating                        |
-| `screenoff`     | Disabling screen updating                       |
-| `lr`            | Last row of the first row of the worksheet      |
-| `lc`            | Last column of the first row of the worksheet   |
-| `mail`          | Create a snippet for building up an email       |
-| `#toletter`     | Public function to convert number into letter   |
-| `letterto#`     | Public function to convert letter to number     |
-| `worksheetloop` | Loop trough current worksheets                  |
-| `user`          | Current  user                                   |
-| `curpath`       | Active workbook path                            |
-| `cltoarray`     | Create a variant array with column values       |
-| `openword`      | Open a new word istance                         |
-| `openwordfile`  | Open a word file                                |
-| `openurl`       | Open a URL                                      |
-| `splitsheet`    | Split the current sheet based on column values  |
-| `attachthis`    | Attach current workbook to a new mail           |
-| `fitcolumns`    | Fit columns width of the worksheet              |
-| `fitrows`       | Fit rows width for the worksheet                |
-| `copysheet`     | Copy current worksheet into a new workbook      |
-| `refreshpivots` | Refresh all pivot tables in the active workbook |
+| abbreviation    | description                                                      |
+| :-------------- | :--------------------------------------------------------------- |
+| `screenon`      | Enabling screen updating                                         |
+| `screenoff`     | Disabling screen updating                                        |
+| `lr`            | Last row of the first row of the worksheet                       |
+| `lc`            | Last column of the first row of the worksheet                    |
+| `mail`          | Create a snippet for building up an email                        |
+| `#toletter`     | Public function to convert number into letter                    |
+| `letterto#`     | Public function to convert letter to number                      |
+| `worksheetloop` | Loop trough current worksheets                                   |
+| `user`          | Current  user                                                    |
+| `curpath`       | Active workbook path                                             |
+| `cltoarray`     | Create a variant array with column values                        |
+| `openword`      | Open a new word istance                                          |
+| `openwordfile`  | Open a word file                                                 |
+| `openurl`       | Open a URL                                                       |
+| `splitsheet`    | Split the current sheet based on column values                   |
+| `attachthis`    | Attach current workbook to a new mail                            |
+| `fitcolumns`    | Fit columns width of the worksheet                               |
+| `fitrows`       | Fit rows width for the worksheet                                 |
+| `copysheet`     | Copy current worksheet into a new workbook                       |
+| `refreshpivots` | Refresh all pivot tables in the active workbook                  |
+| `tabletomail`   | Create an email starting from a range of cells selected in Excel |
+| `duprows`       | Duplicate rows in column 'A'                                   |
 
 
 #### Enabling Screen Updating ```screenon```
@@ -250,7 +252,9 @@ For Each pt In ActiveWorkbook.PivotTables
 Next pt
 ```
 
+#### Duplicate rows in column 'A' ```duprows```
 
+![duprows](duprows.gif)
 
 
 
